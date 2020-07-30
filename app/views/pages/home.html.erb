@@ -6,6 +6,7 @@
   <img src="https://media.giphy.com/media/8OJdqYqN1Nii3UTD6l/giphy.gif">
 
   <%= simple_form_for @article, url: article_path do |f| %>
+    <%= f.input :photo, as: :file %>
     <%= f.input :content,
       as: :rich_text_area,
       label: 'Content',
