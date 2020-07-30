@@ -1,7 +1,17 @@
 <div class="container">
   <h1>SoroSoro</h1>
   <p>Gros blog des familles</p>
-  <p>Design peut être un peu trop épuré</p>
+  <p>Design peut être un peu trop épuré pour le moment</p>
 
   <img src="https://media.giphy.com/media/8OJdqYqN1Nii3UTD6l/giphy.gif">
+
+  <%= simple_form_for @article, url: article_path do |f| %>
+    <%= f.input :content,
+      as: :rich_text_area,
+      label: 'Content',
+      placeholder: 'Text goes here'
+    %>
+    <%# Ajouter le style à l'input pour qu'il soit scrollable =>  overflow-y: auto; %>
+    <%= f.submit %>
+  <% end %>
 </div>
