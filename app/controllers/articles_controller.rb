@@ -1,7 +1,9 @@
 class ArticlesController < ApplicationController
+  def index
+    @articles = Article.all
+  end
 
-  # Pour le Admin::ArticlesController :
-  # def article_params
-  #   params.require(:article).permit(:title, :content, :photo)
-  # end
+  def show
+    @article = Article.find(params[:id])
+  end
 end
