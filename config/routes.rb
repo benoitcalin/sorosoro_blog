@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/valeurs', to: 'pages#valeurs', as: 'valeurs'
   get '/contact', to: 'pages#contact', as: 'contact'
 
-  resources :article, only: [:index, :show]
+  resources :articles, only: [:index, :show]
 
   namespace :admin do
     resources :articles

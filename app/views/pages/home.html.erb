@@ -5,7 +5,7 @@
 
   <img src="https://media.giphy.com/media/8OJdqYqN1Nii3UTD6l/giphy.gif">
 
-  <%= simple_form_for @article, url: article_path do |f| %>
+  <%= simple_form_for @article, url: admin_articles_path do |f| %>
     <%= f.input :photo, as: :file %>
     <%= f.input :content,
       as: :rich_text_area,
@@ -13,6 +13,6 @@
       placeholder: 'Text goes here'
     %>
     <%# Ajouter le style à l'input pour qu'il soit scrollable =>  overflow-y: auto; %>
-    <%= f.submit %>
+    <%= f.submit "Ajouter article", class: "btn btn-primary" %>
   <% end %>
 </div>
