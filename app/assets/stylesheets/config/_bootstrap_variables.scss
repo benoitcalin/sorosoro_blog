@@ -23,3 +23,16 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+$nav-link-color: $soro-green;
+$navbar-light-color:                rgba($soro-green, .9) !default;
+$navbar-light-hover-color:          rgba($soro-green, .7) !default;
+$navbar-light-active-color:         rgba($soro-green, 1) !default;
+$navbar-light-disabled-color:       rgba($soro-green, .3) !default;
+$navbar-light-toggler-border-color: rgba($soro-green, .1) !default;
+
+$h1-font-size: 32px;
+$h2-font-size: 24px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$headings-font-weight: none;
+

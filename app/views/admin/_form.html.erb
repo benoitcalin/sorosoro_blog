@@ -1,0 +1,11 @@
+
+  <%= simple_form_for @article, url: admin_articles_path do |f| %>
+    <%= f.input :photo, as: :file %>
+    <%= f.input :content,
+      as: :rich_text_area,
+      label: 'Content',
+      placeholder: 'Text goes here'
+    %>
+    <%# Ajouter le style à l'input pour qu'il soit scrollable =>  overflow-y: auto; %>
+    <%= f.submit "Ajouter article", class: "btn btn-primary" %>
+  <% end %>

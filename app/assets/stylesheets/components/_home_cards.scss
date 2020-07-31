@@ -1,0 +1,32 @@
+.home-card:nth-child(2) {
+  flex-direction: row-reverse;
+  .home-card-text {
+    padding-left: 15px;
+  }
+}
+
+.home-card {
+  width: 100%;
+  height: 250px;
+  margin: 40px 0;
+
+  display: flex;
+}
+
+.home-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 15px;
+  p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.home-card-image {
+  max-width: 250px;
+}

@@ -34,6 +34,7 @@ gem 'simple_form'
 
 # Manually added
 gem 'cloudinary', '~> 1.12.0'
+gem 'inline_svg'
 
 group :development, :test do
   gem 'pry-byebug'

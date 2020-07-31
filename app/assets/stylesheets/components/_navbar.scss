@@ -1,12 +1,30 @@
 .navbar-soro {
+  position: fixed;
   justify-content: space-between;
   background: white;
+  width: 100%;
+  padding: 0 40px;
+  z-index: 1;
 }
 
 .navbar-soro .navbar-collapse {
   flex-grow: 0;
+  width: 50%;
+  ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+.navbar-nav .active > .nav-link {
+  font-weight: 600;
 }
 
-.navbar-soro .navbar-brand img {
-  width: 40px;
+.navbar-soro .navbar-brand h1 {
+  font-weight: 900;
+}
+
+@media(max-width: 575px) {
+  .navbar-soro {
+    padding: 0 10px;
+  }
 }
