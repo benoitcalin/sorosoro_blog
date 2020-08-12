@@ -1,0 +1,26 @@
+.footer {
+  font-size: 14px;
+  h4 {
+    font-size: 16px;
+    color: $soro-green;
+    margin: 0;
+  }
+  border-top: 1px solid $soro-orange;
+}
+
+.footer-links > a {
+  color: $soro-green;
+}
+
+.footer-infos {
+  display: flex;
+  align-items: center;
+}
+
+.social-medias-footer {
+  svg {
+    margin: 0 5px;
+    width: 15px;
+    fill: $soro-orange;
+  }
+}

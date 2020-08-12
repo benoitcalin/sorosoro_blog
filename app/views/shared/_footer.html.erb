@@ -1,0 +1,28 @@
+<div class="footer">
+  <div class="container d-flex justify-content-between">
+    <div class="footer-links my-4">
+      <%= link_to 'Mentions Légales', contact_path %>
+      <br>
+      <%= link_to 'Cookies', contact_path %>
+      <br>
+      <%= link_to 'Contact', contact_path %>
+    </div>
+
+    <div class="footer-infos">
+      <div class="footer-contact mx-4">
+        <p class="text-center">contact@sorosoro.net</p>
+        <p class="text-center">Tel: 06-00-11-22-33</p>
+        <div class="social-medias-footer text-center">
+          <%= inline_svg_tag('facebook.svg') %>
+          <%= inline_svg_tag('instagram.svg') %>
+          <%= inline_svg_tag('twitter.svg') %>
+        </div>
+      </div>
+      <div class="footer-address">
+        <h4>SoroSoro Inc.</h4>
+        <p>8, cours de la Martinique</p>
+        <p>33000 Bordeaux</p>
+      </div>
+    </div>
+  </div>
+</div>
