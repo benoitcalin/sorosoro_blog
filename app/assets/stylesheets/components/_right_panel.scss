@@ -36,3 +36,28 @@
     fill: $soro-green;
   }
 }
+
+@media(max-width: 992px) {
+  #newsletter-form {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-panel-input {
+    line-height: 38px;
+    margin-bottom: 5px;
+  }
+}
+
+@media(max-width: 768px) {
+  .newsletter {
+    margin: 0px;
+  }
+  .social-medias {
+    svg {
+      margin: 20px 10px;
+    }
+  }
+  .right-panel-input {
+    margin-top: 20px;
+  }
+}

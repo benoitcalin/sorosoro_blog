@@ -30,3 +30,29 @@
 .home-card-image {
   max-width: 250px;
 }
+
+@media(max-width: 992px) {
+  .home-card-image {
+    max-width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+}
+
+@media(max-width: 728px) {
+  .home-card {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+      .home-card-text {
+        padding-left: 0;
+      }
+    }
+  }
+  .home-card-text {
+    padding: 0;
+    margin-top: 20px;
+  }
+}

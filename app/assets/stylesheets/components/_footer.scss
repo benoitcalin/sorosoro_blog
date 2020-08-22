@@ -8,6 +8,11 @@
   border-top: 1px solid $soro-orange;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-links > a {
   color: $soro-green;
 }
@@ -22,5 +27,20 @@
     margin: 0 5px;
     width: 15px;
     fill: $soro-orange;
+  }
+}
+
+@media(max-width: 576px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-infos {
+    // display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
   }
 }

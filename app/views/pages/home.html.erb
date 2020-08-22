@@ -7,11 +7,11 @@
   </div>
 </div>
 
-<div class="container mt-4">
+<div class="container-lg mt-4">
 
   <div class="row">
     <%# Display cards %>
-    <div class="col-8">
+    <div class="col-12 col-md-8">
       <h1 class="text-green mb-4">Nos derniers articles</h1>
 
       <div class="home-cards">
@@ -62,17 +62,17 @@
     </div>
 
     <%# Display right Panel %>
-    <div class="col-4">
+    <div class="col-12 col-md-4">
       <div class="right-panel">
 
-        <form class="d-flex mb-4" id="search-form">
-          <input type="text" placeholder="Mot clé" class='right-panel-input'>
+        <form class="d-none d-md-flex mb-4" id="search-form">
+          <input type="text" placeholder="Trouver un article" class='right-panel-input'>
           <button type="submit" form="search-form" class="btn btn-primary d-flex align-items-center">
             <%= image_tag "loupe.png", width: '20px' %>
           </button>
         </form>
 
-        <div class="last-article">
+        <div class="d-none d-md-block last-article">
           <h4 class="text-green">Lorem ipsum dolor</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
@@ -81,7 +81,7 @@
           </p>
         </div>
 
-        <div class="newsletter my-4">
+        <div class="newsletter my-0 my-sm-4">
           <h3 class="text-center text-green my-4">Lettre d'information</h3>
           <form class="d-flex mb-4" id="newsletter-form">
             <input type="text" placeholder="Votre adresse email" class='right-panel-input'>
@@ -105,30 +105,42 @@
 <div class="insta-container">
   <div class="container py-4">
     <h1 class="text-green mb-4">SoroSoro sur Instagram</h1>
-    <div class="row">
-      <div class="col-2 fake-photo">
+    <div class="row justify-content-around">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
-      <div class="col-2 fake-photo">
+      <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+        <div class="fake-photo"></div>
       </div>
     </div>
   </div>
