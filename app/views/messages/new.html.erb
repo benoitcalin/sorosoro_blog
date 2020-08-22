@@ -1,0 +1,52 @@
+<div class="container-lg">
+  <div class="row adjusted-padding">
+    <div class="col-12 col-md-8">
+      <h1 class="text-green mb-4">Contactez-nous</h1>
+      <%= simple_form_for @message, url: create_message_url do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-inputs p-2">
+          <%= f.input :first_name,
+            placeholder: 'Prénom',
+            label: 'Votre prénom :',
+            required: true,
+            error: 'Le prénom est obligatoire'
+          %>
+          <%= f.input :last_name,
+            placeholder: 'Nom',
+            label: 'Votre nom :',
+            required: true,
+            error: 'Le nom est obligatoire'
+          %>
+          <%= f.input :email,
+            placeholder: 'Email',
+            label: 'Votre email :',
+            required: true,
+            error: 'L\'email est obligatoire'
+          %>
+          <%= f.input :subject,
+            placeholder: 'Sujet',
+            label: 'Le sujet de votre message :',
+            required: true,
+            error: 'Le sujet ne peut être vide'
+          %>
+          <%= f.input :body,
+            placeholder: 'Contenu de votre message',
+            as: :text,
+            label: 'Votre message :',
+            required: true,
+            error: 'Le message ne peut pas être vide',
+            html: { class: "input_body"}
+          %>
+          </div>
+
+        <div class="form-actions d-flex w-100 justify-content-center mb-4">
+          <%= f.button :submit, "Envoyer mon message", class: "btn btn-primary", style: "width: auto" %>
+        </div>
+      <% end %>
+    </div>
+
+    <%# Display right Panel %>
+    <%= render 'shared/right_panel' %>
+  </div>
+</div>

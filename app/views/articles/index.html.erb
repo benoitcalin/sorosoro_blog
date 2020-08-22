@@ -1,1 +1,101 @@
-<h1>Article Index</h1>
+<div class="container-lg">
+
+  <div class="row adjusted-padding">
+    <%# Display cards %>
+    <div class="col-12 col-md-8">
+      <h1 class="text-green mb-4">Nos articles</h1>
+
+      <div class="cards">
+        <%= link_to show_example_path, class: "card-link" do %>
+          <div class="article-card">
+            <div class="article-card-text">
+              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <img src="<%= image_path 'plage.jpg' %>" class="article-card-image">
+          </div>
+        <% end %>
+        <%= link_to show_example_path, class: "card-link" do %>
+          <div class="article-card">
+            <div class="article-card-text">
+              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <img src="<%= image_path 'dechets.jpg' %>" class="article-card-image">
+          </div>
+        <% end %>
+        <%= link_to show_example_path, class: "card-link" do %>
+          <div class="article-card">
+            <div class="article-card-text">
+              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <img src="<%= image_path 'eoliennes.jpg' %>" class="article-card-image">
+          </div>
+        <% end %>
+        <%= link_to show_example_path, class: "card-link" do %>
+          <div class="article-card">
+            <div class="article-card-text">
+              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <img src="<%= image_path 'plage.jpg' %>" class="article-card-image">
+          </div>
+        <% end %>
+        <%= link_to show_example_path, class: "card-link" do %>
+          <div class="article-card">
+            <div class="article-card-text">
+              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <img src="<%= image_path 'plage.jpg' %>" class="article-card-image">
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <%# Display right Panel %>
+    <%= render 'shared/right_panel' %>
+  </div>
+</div>

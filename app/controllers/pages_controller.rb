@@ -1,13 +1,10 @@
 class PagesController < ApplicationController
   def home
-    @article = Article.new
   end
 
   def valeurs
-
   end
 
-  def contact
-
+  def show_example
   end
 end

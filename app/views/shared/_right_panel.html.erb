@@ -1,0 +1,38 @@
+<div class="col-12 col-md-4">
+  <div class="right-panel">
+
+    <form class="d-none d-md-flex mb-4" id="search-form">
+      <input type="text" placeholder="Trouver un article" class='right-panel-input'>
+      <button type="submit" form="search-form" class="btn btn-primary d-flex align-items-center">
+        <%= image_tag "loupe.png", width: '20px' %>
+      </button>
+    </form>
+
+    <div class="d-none d-md-block last-article">
+      <%= link_to show_example_path, class: "card-link" do %>
+        <h4 class="text-green">Lorem ipsum dolor</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      <% end %>
+    </div>
+
+    <div class="newsletter my-0 my-sm-4">
+      <h3 class="text-center text-green my-4">Lettre d'information</h3>
+      <form class="d-flex mb-4" id="newsletter-form">
+        <input type="text" placeholder="Votre adresse email" class='right-panel-input'>
+        <button type="submit" form="newsletter-form" class="btn btn-primary">
+          S'inscrire
+        </button>
+      </form>
+    </div>
+
+    <div class="social-medias text-center">
+      <%= inline_svg_tag('facebook.svg') %>
+      <%= inline_svg_tag('instagram.svg') %>
+      <%= inline_svg_tag('twitter.svg') %>
+    </div>
+  </div>
+</div>

@@ -5,6 +5,7 @@
   width: 100%;
   padding: 0 40px;
   z-index: 1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-soro .navbar-collapse {
@@ -21,6 +22,7 @@
 
 .navbar-soro .navbar-brand h1 {
   font-weight: 900;
+  margin: 5px 0;
 }
 
 @media(max-width: 575px) {
