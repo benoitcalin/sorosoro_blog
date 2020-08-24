@@ -21,7 +21,7 @@
                 <br>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            <img src="<%= image_path 'plage.jpg' %>" class="article-card-image">
+            <%= image_tag 'plage.jpg', class: "article-card-image" %>
           </div>
         <% end %>
         <%= link_to show_example_path, class: "card-link" do %>
@@ -36,7 +36,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <img src="<%= image_path 'dechets.jpg' %>" class="article-card-image">
+            <%= image_tag 'dechets.jpg', class: "article-card-image" %>
           </div>
         <% end %>
         <%= link_to show_example_path, class: "card-link" do %>
@@ -51,26 +51,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <img src="<%= image_path 'eoliennes.jpg' %>" class="article-card-image">
-          </div>
-        <% end %>
-        <%= link_to show_example_path, class: "card-link" do %>
-          <div class="article-card">
-            <div class="article-card-text">
-              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                <br>
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                <br>
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <img src="<%= image_path 'plage.jpg' %>" class="article-card-image">
+            <%= image_tag 'eoliennes.jpg', class: "article-card-image" %>
           </div>
         <% end %>
         <%= link_to show_example_path, class: "card-link" do %>
@@ -89,7 +70,26 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <img src="<%= image_path 'plage.jpg' %>" class="article-card-image">
+            <%= image_tag 'plage.jpg', class: "article-card-image" %>
+          </div>
+        <% end %>
+        <%= link_to show_example_path, class: "card-link" do %>
+          <div class="article-card">
+            <div class="article-card-text">
+              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                <br>
+                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <%= image_tag 'eoliennes.jpg', class: "article-card-image" %>
           </div>
         <% end %>
       </div>
