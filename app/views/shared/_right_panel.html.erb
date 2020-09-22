@@ -9,12 +9,11 @@
     </form>
 
     <div class="d-none d-md-block last-article">
-      <%= link_to show_example_path, class: "card-link" do %>
-        <h4 class="text-green">Lorem ipsum dolor</h4>
+      <% article = Article.where(displayed: true).last  %>
+      <%= link_to article_path(article), class: "card-link" do %>
+        <h4 class="text-green text-clamp-1 text-left"><%= article.title %></h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+          <%= article.content %>
         </p>
       <% end %>
     </div>

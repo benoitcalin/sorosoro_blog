@@ -1,53 +1,17 @@
 <div class="container-lg">
   <div class="row adjusted-padding">
     <div class="col-12 col-md-8">
-      <h1 class="text-green mb-4">Lorem ipsum dolor etc etc</h1>
+      <div class="mb-3">
+        <%= link_to '< Retour à la liste des articles', articles_path, class: "admin-back-link" %>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+          <%= cl_image_tag @article.photo.key, style: "max-width: 80%;", class: "mb-4" %>
 
-      <%= image_tag 'foret-2.jpeg', width: '100%', class: "my-3" %>
+          <h1 class="text-green mb-4"><%= @article.title %></h1>
+          <p class="primary-bold mb-4">Publié le : <%= @article.created_at.strftime("%d/%m/%Y") %></p>
 
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-      </p>
-      <p class="mb-2 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p class="mb-4 w-100 text-right">
-        <strong>Jean-Michel Rédacteur, le 03 juin 2022</strong>
-      </p>
+          <p><%= @article.content %></p>
+      </div>
     </div>
 
     <%# Display right Panel %>

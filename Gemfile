@@ -33,8 +33,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 
 # Manually added
-gem 'cloudinary', '~> 1.12.0'
+gem 'cloudinary', '~> 1.16.0'
 gem 'inline_svg'
+gem 'devise'
 
 group :development, :test do
   gem 'pry-byebug'

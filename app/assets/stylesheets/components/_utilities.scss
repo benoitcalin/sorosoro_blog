@@ -9,3 +9,23 @@
 .adjusted-padding {
   padding-top: 76px;
 }
+
+.min-height-calc {
+  min-height: calc(100vh - 136px);
+}
+
+.text-clamp-1 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text-clamp-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

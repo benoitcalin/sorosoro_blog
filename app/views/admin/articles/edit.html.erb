@@ -1,0 +1,35 @@
+<div class="container min-height-calc adjusted-padding">
+  <div class="mb-3">
+    <%= link_to '< Retour à la liste des articles', admin_articles_path, class: "admin-back-link" %>
+  </div>
+  <h1 class="text-green">Éditer votre Article</h1>
+
+  <%= simple_form_for @article, url: admin_article_path(@article) do |f| %>
+    <%= f.input :title,
+                label: 'Titre'
+    %>
+    <%= f.input :photo, as: :file %>
+    <%= f.input :content,
+      as: :rich_text_area,
+      label: 'Contenu'
+    %>
+    <div class="custom-control custom-switch mb-2">
+      <%= f.check_box :displayed,
+                as: :boolean,
+                class: "custom-control-input",
+                id: "customSwitch1" %>
+      <label class="custom-control-label" for="customSwitch1">Afficher l'article ?</label>
+    </div>
+
+    <div class="w-100 d-flex justify-content-between">
+      <%= f.submit "Éditer l'article", class: "btn btn-primary" %>
+      <%= link_to admin_article_path(@article), method: :delete, data: { confirm: "T'es sûr ou c'est Clément qui est bourré ?" }  do %>
+        <i class="fas fa-trash-alt"></i>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+
+
+

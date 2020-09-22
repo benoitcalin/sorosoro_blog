@@ -1,0 +1,28 @@
+<div class="container min-height-calc adjusted-padding">
+  <div class="mb-3">
+    <%= link_to '< Retour à la liste des articles', admin_articles_path, class: "admin-back-link" %>
+  </div>
+  <h1 class="text-green">Ajouter un Article</h1>
+
+  <%= simple_form_for @article, url: admin_articles_path do |f| %>
+    <%= f.input :title,
+                label: 'Titre',
+                placeholder: 'Votre titre ici'
+    %>
+    <%= f.input :photo, as: :file %>
+    <%= f.input :content,
+      as: :rich_text_area,
+      label: 'Contenu',
+      placeholder: 'Le contenu ici...'
+    %>
+    <div class="custom-control custom-switch mb-3">
+      <%= f.check_box :displayed,
+                as: :boolean,
+                class: "custom-control-input",
+                id: "customSwitch1" %>
+      <label class="custom-control-label" for="customSwitch1">Afficher l'article ?</label>
+    </div>
+    <%# Ajouter le style à l'input pour qu'il soit scrollable =>  overflow-y: auto; %>
+    <%= f.submit "Publier l'article", class: "btn btn-primary" %>
+  <% end %>
+</div>

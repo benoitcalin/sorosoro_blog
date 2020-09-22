@@ -1,8 +1,10 @@
 <div class="banner">
   <div class="banner-content">
-    <h1 class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+    <h1 class="text-center text-white">Le sport, autrement.</h1>
     <h2 class="text-center text-white">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Faire du sport, avec du matériel performant, tout en réduisant notre impact environnemental.
+      <br>
+      C'est notre engagement.
     </h2>
   </div>
 </div>
@@ -15,54 +17,16 @@
       <h1 class="text-green mb-4">Nos derniers articles</h1>
 
       <div class="home-cards">
-        <%= link_to show_example_path, class: "card-link" do %>
-          <div class="home-card">
-            <div class="home-card-text">
-              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                <br>
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                <br>
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-
+        <% @articles.each do |article| %>
+          <%= link_to article_path(article), class: "card-link" do %>
+            <div class="home-card mb-4">
+              <div class="home-card-text">
+                <h3 class="text-clamp-2 text-green text-left"><%= article.title %></h3>
+                <p><%= article.content %></p>
+              </div>
+              <%= cl_image_tag article.photo.key, class: "home-card-image" %>
             </div>
-            <%= image_tag 'plage.jpg', class: "home-card-image" %>
-          </div>
-        <% end %>
-        <%= link_to show_example_path, class: "card-link" do %>
-          <div class="home-card">
-            <div class="home-card-text">
-              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <%= image_tag 'dechets.jpg', class: "home-card-image" %>
-          </div>
-        <% end %>
-        <%= link_to show_example_path, class: "card-link" do %>
-          <div class="home-card mb-4">
-            <div class="home-card-text">
-              <h3 class="text-green">Lorem ipsum dolor sit amet</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <%= image_tag 'eoliennes.jpg', class: "home-card-image" %>
-          </div>
+          <% end %>
         <% end %>
       </div>
     </div>

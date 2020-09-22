@@ -1,0 +1,51 @@
+.admin-article-card {
+  h5 {
+    height: 48px;
+  }
+
+  img {
+    height: 160px;
+    object-fit: cover;
+  }
+  .primary-bold {
+    color: grey;
+  }
+
+  .admin-post-buttons {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      font-size: 1rem;
+    }
+    a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: $soro-green;
+      &:hover {
+        color: $soro-orange;
+      }
+    }
+  }
+
+  .trix-content {
+    height: 144px;
+    div {
+      text-align: left;
+    }
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.admin-back-link {
+  color: grey;
+  &:hover {
+    text-decoration: none;
+  }
+}

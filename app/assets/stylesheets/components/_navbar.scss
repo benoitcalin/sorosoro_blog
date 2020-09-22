@@ -25,6 +25,13 @@
   margin: 5px 0;
 }
 
+.navbar-light .navbar-nav .nav-link.logout-link {
+  color: $soro-orange;
+  &:hover {
+    color: $soro-green;
+  }
+}
+
 @media(max-width: 575px) {
   .navbar-soro {
     padding: 0 10px;
