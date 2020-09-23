@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post '/contact', to: 'messages#create', as: 'create_message'
 
   resources :articles, only: [:index, :show]
+  resources :contacts, only: [:create]
 
   get '/admin', to: 'pages#admin', as: 'admin'
   namespace :admin do
