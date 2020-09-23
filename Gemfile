@@ -36,6 +36,8 @@ gem 'simple_form'
 gem 'cloudinary', '~> 1.16.0'
 gem 'inline_svg'
 gem 'devise'
+# SendinBlue
+gem 'sib-api-v3-sdk'
 
 group :development, :test do
   gem 'pry-byebug'
