@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :articles
   end
+
+  # Youtube to Trix
+  resources :youtube, only: :show
 end
