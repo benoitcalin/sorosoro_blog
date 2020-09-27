@@ -25,6 +25,7 @@ require("@rails/actiontext")
 
 // External imports
 import "bootstrap";
+import "youtube";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';

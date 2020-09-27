@@ -16,7 +16,7 @@
     <div class="col-12 col-md-8">
       <h1 class="text-green mb-4">Nos derniers articles</h1>
 
-      <div class="home-cards">
+      <div class="home-cards pt-4">
         <% @articles.each do |article| %>
           <%= link_to article_path(article), class: "card-link" do %>
             <div class="home-card mb-4">

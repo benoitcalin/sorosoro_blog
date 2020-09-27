@@ -1,7 +1,7 @@
 class Admin::ArticlesController < ApplicationController
   before_action :get_article, only: [:show, :edit, :update, :destroy]
   def index
-    @articles = Article.all
+    @articles = Article.all.ordered_by_creation_reverse
   end
 
   def show
