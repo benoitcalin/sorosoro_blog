@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def home
-    @articles = Article.where(displayed: true)
+    @articles = Article.where(displayed: true).limit(3).ordered_by_creation_reverse
   end
 
   def valeurs

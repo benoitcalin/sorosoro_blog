@@ -10,7 +10,7 @@
 
   <div class="row m-auto">
     <% @articles.each do |article| %>
-      <div class="col-4 d-flex justify-content-center">
+      <div class="col-4 d-flex justify-content-center mb-4">
         <div class="card admin-article-card" style="width: 18rem;">
           <%= cl_image_tag article.photo.key, class: "card-img-top" %>
           <div class="card-body">

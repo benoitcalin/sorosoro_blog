@@ -69,7 +69,9 @@ class EmbedController {
   installEventHandlers() {
     this.hrefElement.addEventListener("input", this.didInput.bind(this))
     this.hrefElement.addEventListener("focusin", this.didInput.bind(this))
-    this.embedElement.addEventListener("click", this.embed.bind(this))
+    if (this.embedElement) {
+      this.embedElement.addEventListener("click", this.embed.bind(this));
+    }
   }
 
   didInput(event) {
@@ -106,11 +108,15 @@ class EmbedController {
 
   showEmbed(embed) {
     this.currentEmbed = embed
-    this.embedContainerElement.style.display = "block"
+    if (this.embedContainerElement) {
+      this.embedContainerElement.style.display = "block"
+    }
   }
 
   reset() {
-    this.embedContainerElement.style.display = "none"
+    if (this.embedContainerElement) {
+      this.embedContainerElement.style.display = "none";
+    }
     this.currentEmbed = null
   }
 }
