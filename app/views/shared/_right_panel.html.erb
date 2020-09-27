@@ -1,12 +1,16 @@
 <div class="col-12 col-md-4">
   <div class="right-panel">
 
-    <form class="d-none d-md-flex mb-4" id="search-form">
-      <input type="text" placeholder="Trouver un article" class='right-panel-input'>
-      <button type="submit" form="search-form" class="btn btn-primary d-flex align-items-center">
+    <%= form_tag articles_path, method: :get, class: "d-none d-md-flex mb-4", id: "search-form" do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "right-panel-input",
+        placeholder: "Trouver un article"
+      %>
+      <%= button_tag(type: "submit", class: "btn btn-primary d-flex align-items-center") do %>
         <%= image_tag "loupe.png", width: '20px' %>
-      </button>
-    </form>
+      <% end %>
+    <% end %>
 
     <div class="d-none d-md-block last-article">
       <% article = Article.where(displayed: true).last  %>

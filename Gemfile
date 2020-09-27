@@ -37,6 +37,9 @@ gem 'cloudinary', '~> 1.16.0'
 gem 'inline_svg'
 gem 'devise'
 gem 'image_processing'
+gem 'pg_search', '~> 2.3.0'
+gem 'kaminari'
+
 # SendinBlue
 gem 'sib-api-v3-sdk'
 
