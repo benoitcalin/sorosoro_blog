@@ -1,10 +1,10 @@
 <div class="footer mt-4">
   <div class="container footer-content">
     <div class="footer-links my-4">
-      <%= link_to 'Mentions Légales', new_message_path %>
-      <br>
-      <%= link_to 'Cookies', new_message_path %>
-      <br>
+      <%#= link_to 'Mentions Légales', new_message_path %>
+      <%#= <br> %>
+      <%#= link_to 'Cookies', new_message_path %>
+      <%#= <br> %>
       <%= link_to 'Contact', new_message_path %>
     </div>
 
@@ -13,9 +13,15 @@
         <p class="text-center">contact@sorosoro.net</p>
         <p class="text-center">Tel: 06-00-11-22-33</p>
         <div class="social-medias-footer text-center">
-          <%= inline_svg_tag('facebook.svg') %>
-          <%= inline_svg_tag('instagram.svg') %>
-          <%= inline_svg_tag('twitter.svg') %>
+          <a href="https://www.facebook.com/sportresponsable-112477027155896">
+            <%= inline_svg_tag('facebook.svg') %>
+          </a>
+          <a href="https://www.instagram.com/sportresponsable/">
+            <%= inline_svg_tag('instagram.svg') %>
+          </a>
+          <div class="d-none">
+            <%= inline_svg_tag('twitter.svg') %>
+          </div>
         </div>
       </div>
       <div class="footer-address">

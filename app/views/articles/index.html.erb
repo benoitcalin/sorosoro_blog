@@ -1,4 +1,4 @@
-<div class="container-lg">
+<div class="container-lg min-height-calc">
 
   <div class="row adjusted-padding">
     <%# Display cards %>
@@ -6,15 +6,19 @@
       <h1 class="text-green mb-4">Nos articles</h1>
 
       <div class="cards">
-        <% @articles.each do |article| %>
-          <%= link_to article_path(article), class: "card-link" do %>
-            <div class="article-card">
-              <div class="article-card-text">
-                <h3 class="text-green text-clamp-1"><%= article.title %></h3>
-                <p><%= article.content %></p>
+        <% if @articles.empty? %>
+          Pas d'articles trouvés.
+        <% else %>
+          <% @articles.each do |article| %>
+            <%= link_to article_path(article), class: "card-link" do %>
+              <div class="article-card">
+                <div class="article-card-text">
+                  <h3 class="text-green text-clamp-1"><%= article.title %></h3>
+                  <p><%= article.content %></p>
+                </div>
+                <%= cl_image_tag article.photo.key, class: "article-card-image" %>
               </div>
-              <%= cl_image_tag article.photo.key, class: "article-card-image" %>
-            </div>
+            <% end %>
           <% end %>
         <% end %>
       </div>

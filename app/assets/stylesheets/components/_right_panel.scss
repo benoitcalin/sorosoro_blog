@@ -36,6 +36,14 @@
 }
 
 .social-medias {
+  a {
+    text-decoration: none;
+    &:hover {
+      svg {
+        fill: $soro-orange;
+      }
+    }
+  }
   svg {
     margin: 0 20px;
     fill: $soro-green;
