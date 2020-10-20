@@ -18,8 +18,8 @@
 
       <div class="home-cards pt-4">
         <% @articles.each do |article| %>
-          <%= link_to article_path(article), class: "card-link" do %>
-            <div class="home-card mb-4">
+          <%= button_to article_path(article), class: "card-link mb-4" do %>
+            <div class="home-card">
               <div class="home-card-text">
                 <h3 class="text-clamp-2 text-green text-left"><%= article.title %></h3>
                 <p><%= article.content %></p>
