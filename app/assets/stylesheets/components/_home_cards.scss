@@ -12,6 +12,7 @@
   height: 250px;
   display: flex;
   .trix-content {
+    height: 142px;
     div {
       text-align: left;
     }
@@ -23,6 +24,9 @@
     -webkit-box-orient: vertical;
   }
   &:hover {
+    h3 {
+      color: $soro-orange;
+    }
     color: $soro-orange;
   }
 }
