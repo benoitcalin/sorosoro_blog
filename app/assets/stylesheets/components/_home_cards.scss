@@ -1,4 +1,4 @@
-.home-cards .card-link:nth-child(2) {
+.home-cards form:nth-child(2) {
   .home-card {
     flex-direction: row-reverse;
     .home-card-text {
@@ -69,7 +69,7 @@
     height: auto;
     align-items: center;
   }
-  .home-cards .card-link:nth-child(2) {
+  .home-cards form:nth-child(2) {
     .home-card {
       flex-direction: column-reverse;
       .home-card-text {
