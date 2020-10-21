@@ -18,7 +18,7 @@
 
       <div class="home-cards pt-4">
         <% @articles.each do |article| %>
-          <%= button_to article_path(article), class: "card-link mb-4" do %>
+          <%= button_to article_path(article), class: "card-link mb-4", method: :get do %>
             <div class="home-card">
               <div class="home-card-text">
                 <h3 class="text-clamp-2 text-green text-left"><%= article.title %></h3>
