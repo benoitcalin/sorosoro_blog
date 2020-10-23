@@ -25,7 +25,8 @@ require("@rails/actiontext")
 
 // External imports
 import "bootstrap";
-import "youtube";
+import "trix_improvements/youtube";
+import "trix_improvements/target_blank";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
